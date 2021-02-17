@@ -1,0 +1,5 @@
+XAML issues help
+
+- There will be issues with namespaces in the XAML; full paths are needed here
+
+- UserControls require codebehind to work correctly in C#

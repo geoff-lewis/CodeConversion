@@ -1,0 +1,39 @@
+XAML issues answers
+
+
+To get the project to build:
+============================
+
+MainWindow.xaml class path:
+
+<Window x:Class="CodeConversion.XAMLIssues.MainWindow"
+
+SpinnerCircle.xaml class path:
+
+<UserControl x:Class="CodeConversion.XAMLIssues.SpinnerCircle"
+
+
+--------
+
+
+To get your spinner usercontrol to display:
+===========================================
+
+Add a codebehind file for SpinnerCircle.xaml; **naming is important for the IDE to link the files**
+
+Filename: SpinnerCircle.xaml.cs
+
+Code:
+
+using System.Windows.Controls;
+
+namespace CodeConversion
+{
+    public partial class SpinnerCircle : UserControl
+    {
+        public SpinnerCircle()
+        {
+            InitializeComponent();
+        }
+    }
+}
